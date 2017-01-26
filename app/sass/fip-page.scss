@@ -1,0 +1,33 @@
+@import "promo-2";
+@import "info";
+@import "persons";
+@import "video";
+@import "photo";
+@import "awards";
+
+.article {
+
+  &_2 h3{
+    margin-top: 2px;
+  }
+
+}
+
+.fip-article {
+
+  &__info_2{
+    border-bottom: none;
+
+    dt{
+      width: 209px;
+      padding-right: 9px;
+    }
+
+    dd{
+      width: 350px;
+    }
+
+  }
+
+}
+
