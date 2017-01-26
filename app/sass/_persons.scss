@@ -1,0 +1,63 @@
+.persons {
+  position: relative;
+  height: 380px;
+  padding: 40px;
+  margin-bottom: 70px;
+  background-color: #ededed;
+
+  &__swipe{
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  &__item{
+    width: 210px;
+    line-height: 22px;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  &__img{
+    margin-bottom: 16px;
+  }
+
+  &__name{
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #000;
+  }
+
+  &__post{
+    color: #999;
+    font-size: 14px;
+  }
+
+  &-button-prev,
+  &-button-next{
+    position: absolute;
+    top: 122px;
+    cursor: pointer;
+
+    svg{
+      width: 20px;
+      height: 46px;
+    }
+
+  }
+
+  &-button-prev{
+    left: 50%;
+    margin-left: -522px;
+  }
+
+  &-button-next{
+    right: 50%;
+    margin-right: -522px;
+  }
+
+}
+

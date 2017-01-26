@@ -1,0 +1,124 @@
+.map-content {
+  position: relative;
+  width: 100%;
+
+  #map{
+    height: 420px;
+    width: 100%;
+    font-size: 14px;
+
+    span{
+      color: #999;
+      font-size: 12px;
+    }
+
+  }
+
+  &__legend{
+    overflow: hidden;
+    height: 0;
+    z-index: 3;
+    transition: height .3s ease;
+    -webkit-transition: height .3s ease;
+
+    &-layout{
+      width: 960px;
+      margin: 0 auto;
+      transition: opacity .3s ease;
+      -webkit-transition: opacity .3s ease;
+
+      &.hidden{
+        opacity: 0;
+      }
+
+    }
+
+    &-item{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 8px;
+      color: #000;
+    }
+
+    &-topic{
+      max-width: 185px;
+    }
+
+  }
+
+  &__institute{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid #e6e6e6;
+    font-size: 12px;
+    line-height: 16px;
+
+    &:first-child{
+      border-top: none;
+    }
+
+    &-name{
+      width: 240px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+
+    &-content{
+      width: 680px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      color: #999;
+    }
+
+    &-info{
+      max-width: 33%;
+      padding-right: 10px;
+
+      p{
+        margin-left: 31px;
+      }
+
+    }
+
+  }
+
+  &__icon{
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    border-radius: 50px;
+    background: url('../img/icons-map-legend.png') no-repeat 0 0;
+
+    &_reports{
+      background-position: 5px 9px;
+    }
+
+    &_site{
+      background-position: 5px -16px;
+    }
+
+    &_fip{
+      background-position: 5px -46px;
+    }
+
+    &_1{
+      background-color: #ff6a51;
+    }
+
+    &_2{
+      background-color: #ffb751;
+    }
+
+    &_3{
+      background-color: #94b825;
+    }
+
+  }
+
+}
+

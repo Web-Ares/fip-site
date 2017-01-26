@@ -1,0 +1,56 @@
+.document {
+  margin-bottom: 63px;
+  padding-bottom: 61px;
+  border-bottom: 1px solid #000;
+  line-height: 20px;
+
+  a{
+    color: #4c8ece;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+
+  &__back{
+    position: relative;
+    margin: 4px 0 30px;
+    padding-left: 1px;
+
+    &:before{
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 3px;
+      border-bottom: 1px solid #4c8ece;
+      border-left: 1px solid #4c8ece;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      content: '';
+    }
+
+  }
+
+  &__info{
+    margin: -16px 0 56px;
+    color: #999;
+  }
+
+  &__content{
+    margin-bottom: 29px;
+  }
+
+  &__download{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__icon{
+    margin-right: 18px;
+  }
+
+}
+

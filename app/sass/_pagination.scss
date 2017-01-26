@@ -1,0 +1,90 @@
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 179px;
+  border-top: 1px solid #d9d9d9;
+
+  li{
+    margin-top: -1px;
+
+    &:first-child a,
+    &:last-child a{
+      position: relative;
+      width: 28px;
+      text-indent: -9999px;
+
+      &:after{
+        position: absolute;
+        top: 18px;
+        right: 7px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid #a1a1a1;
+        border-right: 1px solid #a1a1a1;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: border-color .3s ease;
+        -webkit-transition: border-color .3s ease;
+        content: '';
+      }
+
+      &:hover:after{
+        border-top-color: #619ad3;
+        border-right-color: #619ad3;
+      }
+
+    }
+
+    &:first-child a:after{
+      left: 0;
+      right: auto;
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    &:first-child a:hover,
+    &:last-child a:hover{
+      border-color: transparent;
+      opacity: .8;
+    }
+
+  }
+
+  a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-top: 3px solid transparent;
+    color: #999;
+    line-height: 40px;
+    text-align: center;
+    transition: color .3s ease, border-color .3s ease, opacity .3s ease;
+    -webkit-transition: color .3s ease, border-color .3s ease, opacity .3s ease;
+
+    &:hover{
+      color: #639bd1;
+      border-top-color: #639bd1;
+    }
+
+  }
+
+  .active a{
+    color: #639bd1;
+    border-top-color: #639bd1;
+    cursor: default;
+  }
+
+}
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+

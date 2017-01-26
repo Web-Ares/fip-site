@@ -1,0 +1,36 @@
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 600px;
+  line-height: 20px;
+
+  &__img{
+    width: 210px;
+    margin-top: 7px;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  &__wrap{
+    width: 355px;
+    margin-left: 31px;
+    padding-top: 2px;
+
+    p{
+      margin-bottom: 8px;
+    }
+
+    strong{
+      color: #999;
+      font-weight: 400;
+    }
+
+  }
+
+}
+

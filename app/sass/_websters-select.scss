@@ -1,0 +1,114 @@
+.websters-select {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  width: 320px;
+  height: 34px;
+  border: 1px solid $websters-select-border;
+  transition: border-color .3s ease, top .3s ease;
+  -webkit-transition: border-color .3s ease, top .3s ease;
+
+  &_opened {
+    border-color: #6fa3d5;
+
+    .websters-select__arrow {
+      top: 15px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+  }
+
+  &__arrow{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #6da2d6;
+    border-left: 1px solid #6da2d6;
+    transform-origin: center;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+  }
+
+  &__item {
+    overflow: hidden;
+    @include absoluteCenterY();
+    right: 20px;
+    left: 5px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+
+  &_mobile {
+
+    select {
+      position: absolute;
+      top: 0;
+      bottom: -1px;
+      left: 1px;
+      width: 100%;
+    }
+
+  }
+
+  &_custom {
+
+    select {
+      position: absolute;
+      left: -100000px;
+    }
+
+  }
+
+  &__popup {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    box-sizing: border-box;
+    border: 1px solid #6da2d6;
+    border-top: none;
+    @include main-font1;
+    font-size: 14px;
+    background-color: $websters-select-popup-back;
+
+    ul {
+      z-index: 1;
+    }
+
+    li {
+      padding: 8px 5px;
+      height: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background-color .3s ease, color .3s ease;
+      -webkit-transition: background-color .3s ease, color .3s ease;
+
+      &:first-child{
+        display: none;
+      }
+
+      &:hover {
+        color: $websters-select-popup-item-active-color;
+        background-color: #6da2d6;
+      }
+
+      &.active {
+        color: $websters-select-popup-item-active-color !important;
+        background-color: #6da2d6 !important;
+      }
+
+    }
+
+  }
+
+}

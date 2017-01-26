@@ -1,0 +1,77 @@
+.fip-article {
+  line-height: 20px;
+
+  h1{
+    margin-bottom: 23px;
+  }
+
+  &__author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 69px;
+    padding-top: 14px;
+    font-weight: 600;
+
+    &-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      margin-right: 15px;
+      border-radius: 50%;
+      background: url('../img/bg-ava.png') no-repeat center #b8c3d1;
+      background-size: 60%;
+      overflow: hidden;
+
+      img{
+        display: block;
+      }
+
+    }
+
+  }
+
+  &__info{
+    margin: 34px 0 60px;
+    border-bottom: 1px solid #d9d9d9;
+
+    dl{
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 10px 0 4px;
+      border-top: 1px solid #d9d9d9;
+    }
+
+    dt{
+      width: 206px;
+      padding-right: 6px;
+      color: #999;
+      text-align: left;
+    }
+
+    dd{
+      width: 450px;
+    }
+
+    &_2{
+      border-bottom: none;
+
+      dt{
+        width: 209px;
+        padding-right: 9px;
+      }
+
+      dd{
+        width: 350px;
+      }
+
+    }
+
+  }
+
+}
+

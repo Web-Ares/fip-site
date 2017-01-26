@@ -1,0 +1,85 @@
+.conference {
+  margin-bottom: 51px;
+  padding-top: 5px;
+
+  &__navigation {
+    margin-bottom: 69px;
+    line-height: 20px;
+
+    &-item {
+      display: block;
+      margin-bottom: 10px;
+      color: #498dd0;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      &_active {
+        color: #000;
+        font-weight: 600;
+
+        &:hover{
+          text-decoration: none;
+          cursor: default;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-registry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 5px;
+    margin-bottom: 9px;
+    background-color: #639bd1;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+
+    span{
+      margin-right: 7px;
+      padding-left: 26px;
+      background: url('../img/icon-registry.png') no-repeat 0 0;
+    }
+
+    &:hover{
+      background-color: #487db3;
+    }
+
+  }
+
+  &-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 9px;
+    padding: 0 26px 5px;
+    border: 2px solid #639bd1;
+    color: #639bd1;
+    font-size: 16px;
+    text-align: center;
+    line-height: 18px;
+    background: url(../img/icon-video.png) no-repeat 7px 5px;
+    transition: border-color .3s ease, color .3s ease;
+    -webkit-transition: border-color .3s ease, color .3s ease;
+
+    &:hover{
+      border-color: #487db3;
+      color: #487db3;
+    }
+
+  }
+
+}
+

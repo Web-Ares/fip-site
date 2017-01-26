@@ -1,0 +1,141 @@
+.promo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 63px;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 620px;
+    padding: 42px 45px 48px 41px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    line-height: 20px;
+
+    &:after {
+      top: 0;
+      left: 0;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(99, 155, 209, 0);
+      border-top-color: #639bd1;
+      border-width: 33px 33px 0 0;
+    }
+
+    h2{
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+  }
+
+  &__about{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 692px;
+    color: #fff;
+    line-height: 20px;
+
+    &:before{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 522px;
+      background-color: rgba(0,0,0,.5);
+      content: '';
+    }
+
+    &:after{
+      right: 0;
+      bottom: 0;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: transparent;
+      border-left-color: rgba(0,0,0,.5);
+      border-width: 170px 0 0 170px;
+    }
+
+    h2{
+      margin-bottom: 19px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    > div {
+      position: relative;
+      padding: 31px 120px 40px 41px;
+      z-index: 1;
+
+      &:after {
+        top: 0;
+        left: 0;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(99, 155, 209, 0);
+        border-top-color: #639bd1;
+        border-width: 33px 33px 0 0;
+      }
+
+    }
+
+  }
+
+  &__social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 21px;
+    bottom: 22px;
+
+    &-item{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 47px;
+      height: 47px;
+      margin-left: 5px;
+      border-radius: 50%;
+      background-color: rgba(99,155,209,.7);
+      overflow: hidden;
+      -webkit-transition: background-color .3s ease;
+      transition: background-color .3s ease;
+
+      &:hover{
+        background-color: rgba(99,155,209,1);
+      }
+
+    }
+
+    svg{
+      width: 19px;
+      max-height: 20px;
+      fill: #fff;
+    }
+
+  }
+
+}
+

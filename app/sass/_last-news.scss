@@ -1,0 +1,25 @@
+.last-news {
+  line-height: 20px;
+
+  a {
+    color: #4c8ece;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+  &__item{
+    margin-bottom: 28px;
+  }
+
+  &__data{
+    display: block;
+    margin-top: 11px;
+    color: #b2b2b2;
+    font-size: 12px;
+  }
+
+}
+

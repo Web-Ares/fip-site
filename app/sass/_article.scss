@@ -1,0 +1,72 @@
+.article {
+  line-height: 20px;
+
+  a{
+    color: #4c8ece;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+
+  h1{
+    margin-bottom: 37px;
+  }
+
+  h2{
+    margin: 40px 0 12px;
+    color: #4c8ece;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  h3{
+    margin: 40px 0 34px;
+    color: #4c8ece;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  p{
+    margin-bottom: 10px;
+  }
+
+  time{
+    display: block;
+    margin: -22px 0 49px;
+    color: #b2b2b2;
+  }
+
+  table{
+    margin-top: 30px;
+
+    thead td{
+      padding: 9px 31px 9px 17px;
+      background-color: #ededed;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    th, td{
+      padding: 14px 17px 16px;
+      border: 1px solid #d9d9d9;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    th{
+      padding: 9px 17px;
+      color: #4c8ece;
+      font-weight: 700;
+    }
+
+  }
+
+  &_2 h3{
+    margin-top: 2px;
+  }
+
+}
+

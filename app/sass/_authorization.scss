@@ -1,0 +1,165 @@
+.authorization {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  position: absolute;
+  top: 53px;
+  right: 0;
+  width: 347px;
+  text-align: right;
+
+  fieldset{
+    position: relative;
+    width: 50%;
+    height: 34px;
+    padding: 1px;
+
+    label{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      border: 1px solid #ccc;
+      transition: border-color .3s ease;
+      -webkit-transition: border-color .3s ease;
+      cursor: text;
+
+      &:before, &:after{
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        left: 1px;
+        width: 24px;
+        background: url('../img/icons-header.png') no-repeat 8px -24px #fff;
+        transition: opacity .3s ease;
+        -webkit-transition: opacity .3s ease;
+        opacity: 0;
+        content: '';
+      }
+
+      &:after {
+        background-position: 8px -57px;
+      }
+
+    }
+
+    input{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0 10px 2px 25px;
+      border: none;
+      @include main-font1;
+      background: url('../img/icons-header.png') no-repeat 9px 9px;
+      font-size: 14px;
+      transition: background .3s ease;
+
+      &:focus{
+        z-index: 2;
+
+        + label {
+          z-index: 2;
+          border-color: #619ad3;
+
+          &:before{
+            opacity: 1;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    button{
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 22px;
+      height: 22px;
+      border: none;
+      background: url('../img/icons-header.png') no-repeat 6px -192px #639bd1;
+      transition: background-color .3s ease;
+      -webkit-transition: background-color .3s ease;
+      z-index: 3;
+
+      &:hover{
+        background-color: #6db8ff;
+      }
+
+    }
+
+  }
+
+  &__error{
+    position: absolute;
+    top: -21px;
+    right: 0;
+    color: #ff6a51;
+    font-size: 12px;
+  }
+
+  &__password{
+    padding-right: 40px!important;
+    background-position: 10px -19px!important;
+
+    label{
+      left: -1px!important;
+
+      &:before{
+        background-position: 9px -120px!important;
+      }
+
+      &:after {
+        background-position: 9px -154px!important;
+      }
+
+    }
+
+    input{
+      background-position: 9px -88px!important;
+    }
+
+  }
+
+  &__link{
+    width: 100%;
+    margin-top: 8px;
+    font-size: 12px;
+
+    &-item{
+      margin-left: 15px;
+      color: #b2b2b2;
+      text-decoration: underline;
+    }
+
+  }
+
+  &__registration{
+    color: #498dd0;
+  }
+
+  &.error{
+
+    label{
+      border-color: #ff6a51;
+
+      &:after{
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+}
+

@@ -1,0 +1,38 @@
+.news-list {
+  width: 100%;
+  margin-bottom: 65px;
+
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 22px 0 25px;
+    border-top: 1px solid #d9d9d9;
+    color: #b2b2b2;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:first-child{
+      padding-top: 11px;
+      border-top: none;
+    }
+
+  }
+
+  &__topic{
+    width: 748px;
+    font-weight: 400;
+
+    a{
+      color: #4c8ece;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+}
+

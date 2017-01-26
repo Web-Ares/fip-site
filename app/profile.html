@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=980">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout">
+
+                <!-- ministry-of-education -->
+                <div class="ministry-of-education">
+                    <img src="img/emblem-ministry-of-education.png" alt="Министерство образования и науки Российской федерации"/>
+                </div>
+                <!-- /ministry-of-education -->
+
+                <!-- logo -->
+                <a href="/" class="logo">
+                    <img src="img/logo.png" alt="ФИП"/>
+                </a>
+                <!-- /logo -->
+
+                <!-- authorization -->
+                <div class="authorization">
+
+                    <form method="post" action="#" class="authorization__form">
+
+                        <!--<label for="authorization__name" class="authorization__error">Логин или пароль введены неверное!</label>-->
+
+                        <fieldset class="authorization__login">
+                            <input type="text" name="authorization__name" id="authorization__name" required placeholder="Логин"/>
+                            <label for="authorization__name"></label>
+                        </fieldset>
+
+                        <fieldset class="authorization__password">
+                            <input type="password" name="authorization__password" id="authorization__password" required placeholder="Пароль"/>
+                            <label for="authorization__password"></label>
+                        </fieldset>
+
+                        <button name="authorization__btn"></button>
+
+                    </form>
+
+                    <div class="authorization__link">
+                        <a href="#" class="authorization__link-item">Забыли пароль?</a>
+                        <a href="#" class="authorization__link-item authorization__registration">Регистрация</a>
+                    </div>
+
+                </div>
+                <!-- /authorization -->
+
+            </div>
+            <!-- /site__header-layout -->
+
+            <!-- menu -->
+            <nav class="menu">
+
+                <!-- menu__layout -->
+                <div class="menu__layout">
+                    <a href="#" class="menu__item">ФИП</a>
+                    <a href="#" class="menu__item">МЕРОПРИЯТИЯ</a>
+                    <a href="#" class="menu__item">БИБЛИОТЕКА ДОКУМЕНТОВ</a>
+                    <a href="#" class="menu__item">ФОТО И ВИДЕО</a>
+                    <a href="#" class="menu__item">КОНТАКТЫ</a>
+                    <a href="#" class="menu__item">ПАРТНЕРЫ</a>
+                    <a href="#" class="menu__item">ФОРУМЫ</a>
+                </div>
+                <!-- /menu__layout -->
+
+            </nav>
+            <!-- /menu -->
+
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- bread-crumbs -->
+            <div class="bread-crumbs">
+                <a href="#" class="bread-crumbs__item">Главная</a>
+                <span>Личный кабинет</span>
+            </div>
+            <!-- /bread-crumbs -->
+
+            <!-- site__aside -->
+            <aside class="site__aside site__aside_small">
+
+                <!-- conference -->
+                <div class="conference__navigation">
+
+                    <a href="#" class="conference__navigation-item conference__navigation-item_active">Мой профиль</a>
+                    <a href="#" class="conference__navigation-item">Сменить пароль</a>
+                    <a href="#" class="conference__navigation-item">Анкета</a>
+                    <a href="#" class="conference__navigation-item">Лента активности</a>
+                    <a href="#" class="conference__navigation-item">Сообщения</a>
+                    <a href="#" class="conference__navigation-item">Галерея</a>
+                    <a href="#" class="conference__navigation-item">Блог</a>
+                    <a href="#" class="conference__navigation-item">Команда</a>
+                    <a href="#" class="conference__navigation-item">События</a>
+                    <a href="#" class="conference__navigation-item">Документы</a>
+                    <a href="#" class="conference__navigation-item">Избранное</a>
+                    <a href="#" class="conference__navigation-item">Объявления</a>
+                    <a href="#" class="conference__navigation-item">Выход</a>
+
+                </div>
+                <!-- /conference -->
+
+            </aside>
+            <!-- /site__aside -->
+
+            <!-- site__wrap -->
+            <article class="site__wrap">
+
+                <h1 class="site__page-title">Мой профиль</h1>
+
+                <!-- profile -->
+                <form method="get" action="/" class="profile" novalidate>
+
+                    <!-- profile__photo -->
+                    <div class="profile__photo">
+
+                        <div class="profile__ava"></div>
+
+                        <div>
+                            <p><label for="profile__ava" class="profile__file">Выберите фото</label></p>
+                            <input type="file" name="profile__ava" id="profile__ava"/>
+                            <p>Требуется фото форматов JPG, PNG, GIF</p>
+                            <p>Максимальный объем файла не должен превышать 800 Кб</p>
+                        </div>
+
+                    </div>
+                    <!-- /profile__photo -->
+
+                    <!-- profile__category -->
+                    <div class="profile__category">
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__surname">Фамилия  <span>*</span></label>
+                            <input type="text" name="profile__surname" id="profile__surname" value="Орлянская" required/>
+
+                            <!--<label for="profile__surname" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__name">Имя <span>*</span></label>
+                            <input type="text" name="profile__name" id="profile__name" value="Анна" required/>
+
+                            <!--<label for="profile__name" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__fathername">Отчество</label>
+                            <input type="text" name="profile__fathername" id="profile__fathername" value="Александровна" />
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                    </div>
+                    <!-- /profile__category -->
+
+                    <!-- profile__category -->
+                    <div class="profile__category">
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__sex">Пол</label>
+                            <select name="profile__sex" id="profile__sex">
+                                <option value="0"></option>
+                                <option value="male" selected>Мужской</option>
+                                <option value="female">Женский</option>
+                            </select>
+
+                            <!--<label for="profile__country" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__age">Возрастная группа</label>
+                            <select name="profile__age" id="profile__age">
+                                <option value="0"></option>
+                                <option value="18-21">18-21</option>
+                                <option value="22-30" selected>22-30</option>
+                                <option value="31-35">31-35</option>
+                                <option value="36-90">36-90</option>
+                            </select>
+
+                            <!--<label for="profile__country" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                    </div>
+                    <!-- /profile__category -->
+
+                    <!-- profile__category -->
+                    <div class="profile__category">
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__country">Страна <span>*</span></label>
+                            <select name="profile__country" id="profile__country">
+                                <option value="0"></option>
+                                <option value="Россия" selected>Россия</option>
+                                <option value="Украина">Украина</option>
+                                <option value="Грузия">Грузия</option>
+                            </select>
+
+                            <!--<label for="profile__country" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__region">Регион  <span>*</span></label>
+                            <select name="profile__region" id="profile__region">
+                                <option value="0"></option>
+                                <option value="Россия" selected>Московская область</option>
+                                <option value="Украина">Саратовская область</option>
+                                <option value="Грузия">Сибирь</option>
+                            </select>
+
+                            <!--<label for="profile__email" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__city">Населенный пункт <span>*</span></label>
+                            <input type="text" name="profile__city" id="profile__city" value="Коломна" required/>
+
+                            <!--<label for="profile__email" class="profile__error">Это поле обязательное для заполнения</label>-->
+
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                    </div>
+                    <!-- /profile__category -->
+
+                    <!-- profile__category -->
+                    <div class="profile__category">
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__organization">Организация</label>
+                            <input type="text" name="profile__organization" id="profile__organization" value="Наука и жизнь"/>
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__post">Должность</label>
+                            <input type="text" name="profile__post" id="profile__post" value="Кандидат науки"/>
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                        <!-- profile__fieldset -->
+                        <div class="profile__fieldset">
+                            <label for="profile__phone">Контактный телефон</label>
+                            <input type="text" name="profile__phone" id="profile__phone" value="8 (916) 728-73-84"/>
+                        </div>
+                        <!-- /profile__fieldset -->
+
+                    </div>
+                    <!-- /profile__category -->
+
+                    <!-- profile__btn-wrap -->
+                    <div class="profile__btn-wrap">
+                        <button type="submit" name="profile__orde" class="btn">Сохранить изменения</button>
+                    </div>
+                    <!-- /profile__btn-wrap -->
+
+                </form>
+                <!-- /profile -->
+
+            </article>
+            <!-- /site__wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <!-- footer-menu -->
+                <div class="footer-menu">
+                    <a href="#" class="footer-menu__item">ФИП</a>
+                    <a href="#" class="footer-menu__item">Мероприятия</a>
+                    <a href="#" class="footer-menu__item">Библиотека документов</a>
+                    <a href="#" class="footer-menu__item">Фото и видео</a>
+                    <a href="#" class="footer-menu__item">Контакты</a>
+                    <a href="#" class="footer-menu__item">Партнеры</a>
+                    <a href="#" class="footer-menu__item">Форумы</a>
+                </div>
+                <!-- /footer-menu -->
+
+            </div>
+            <!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+    <script src="js/vendors/jquery-2.2.1.min.js"></script>
+    <script src="js/vendors/jquery.nicescroll.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.fip-list {
+  padding-top: 5px;
+
+  &__topic{
+    margin-bottom: 31px;
+    color: #4c8ece;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &__persons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-right: -40px;
+  }
+
+  &__person{
+    display: block;
+    width: 210px;
+    margin: 0 40px 62px 0;
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+
+    &-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 210px;
+      height: 210px;
+      margin-bottom: 14px;
+      background: url('../img/bg-ava.png') no-repeat center #b8c3d1;
+      transition: opacity .3s ease;
+      -webkit-transition: opacity .3s ease;
+    }
+
+    &-name{
+      margin-bottom: 11px;
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      transition: color .3s ease;
+      -webkit-transition: color .3s ease;
+    }
+
+    &:hover{
+      color: #000;
+
+      .fip-list__person-name {
+        color: #4c8ece;
+      }
+
+      .fip-list__person-img {
+        opacity: .7;
+      }
+
+    }
+
+  }
+
+}
+

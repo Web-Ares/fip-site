@@ -1,0 +1,123 @@
+.site {
+  position: relative;
+  min-width: 960px;
+  margin: 0 auto;
+  min-height: 100%;
+  @include main-font1;
+  font-size: 14px;
+  overflow: hidden;
+  z-index: 1;
+
+  &:after{
+    display: block;
+    width: 100%;
+    height: 100px;
+    content: '';
+  }
+
+  &__header {
+    position: relative;
+    height: 190px;
+    margin-bottom: 30px;
+    z-index: 4;
+
+    &-layout {
+      position: relative;
+      width: 960px;
+      height: 140px;
+      margin: 0 auto;
+      padding-top: 24px;
+    }
+
+  }
+
+  &__wrap {
+    width: 600px;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 960px;
+    margin: 0 auto 9px;
+  }
+
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+    margin-bottom: 35px;
+
+    &-more{
+      color: #999;
+      font-size: 12px;
+      transition: color .3s ease;
+      -webkit-transition: color .3s ease;
+
+      &:hover{
+        color: #4c8ece;
+      }
+
+    }
+
+  }
+
+  &__page-title{
+    width: 100%;
+    margin-bottom: 28px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__aside {
+    width: 280px;
+    margin-bottom: 84px;
+
+    + .site__wrap{
+      width: 660px;
+      margin: -4px 0 125px;
+    }
+
+    &_small{
+      width: 220px;
+
+      .site__title{
+        margin-bottom: 25px;
+      }
+
+    }
+
+    &_2{
+      margin-bottom: 6px;
+    }
+
+  }
+
+  &__footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    background-color: $site-footer-back;
+
+    &-layout {
+      position: relative;
+      width: 960px;
+      margin: 0 auto;
+      height: inherit;
+    }
+
+  }
+
+}
+

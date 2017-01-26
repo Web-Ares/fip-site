@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=980">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout">
+
+                <!-- ministry-of-education -->
+                <div class="ministry-of-education">
+                    <img src="img/emblem-ministry-of-education.png" alt="Министерство образования и науки Российской федерации"/>
+                </div>
+                <!-- /ministry-of-education -->
+
+                <!-- logo -->
+                <a href="/" class="logo">
+                    <img src="img/logo.png" alt="ФИП"/>
+                </a>
+                <!-- /logo -->
+
+                <!-- authorization -->
+                <div class="authorization">
+
+                    <form method="post" action="#" class="authorization__form">
+
+                        <!--<label for="authorization__name" class="authorization__error">Логин или пароль введены неверное!</label>-->
+
+                        <fieldset class="authorization__login">
+                            <input type="text" name="authorization__name" id="authorization__name" required placeholder="Логин"/>
+                            <label for="authorization__name"></label>
+                        </fieldset>
+
+                        <fieldset class="authorization__password">
+                            <input type="password" name="authorization__password" id="authorization__password" required placeholder="Пароль"/>
+                            <label for="authorization__password"></label>
+                        </fieldset>
+
+                        <button name="authorization__btn"></button>
+
+                    </form>
+
+                    <div class="authorization__link">
+                        <a href="#" class="authorization__link-item">Забыли пароль?</a>
+                        <a href="#" class="authorization__link-item authorization__registration">Регистрация</a>
+                    </div>
+
+                </div>
+                <!-- /authorization -->
+
+            </div>
+            <!-- /site__header-layout -->
+
+            <!-- menu -->
+            <nav class="menu">
+
+                <!-- menu__layout -->
+                <div class="menu__layout">
+                    <a href="#" class="menu__item">ФИП</a>
+                    <a href="#" class="menu__item">МЕРОПРИЯТИЯ</a>
+                    <a href="#" class="menu__item">БИБЛИОТЕКА ДОКУМЕНТОВ</a>
+                    <a href="#" class="menu__item">ФОТО И ВИДЕО</a>
+                    <a href="#" class="menu__item">КОНТАКТЫ</a>
+                    <a href="#" class="menu__item">ПАРТНЕРЫ</a>
+                    <a href="#" class="menu__item">ФОРУМЫ</a>
+                </div>
+                <!-- /menu__layout -->
+
+            </nav>
+            <!-- /menu -->
+
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- bread-crumbs -->
+            <div class="bread-crumbs">
+                <a href="#" class="bread-crumbs__item">Главная</a>
+                <span>Библиотека</span>
+            </div>
+            <!-- /bread-crumbs -->
+
+            <!-- site__aside -->
+            <aside class="site__aside site__aside_small">
+
+                <!-- filter -->
+                <form method="get" action="/" class="filter">
+
+                    <!-- filter__btn-wrap -->
+                    <div class="filter__btn-wrap">
+                        <button type="button" name="filter__apply" class="btn">Показать документы</button>
+                        <button type="reset" name="filter__reset" class="btn btn_2">Очистить фильтр</button>
+                    </div>
+                    <!-- /filter__btn-wrap -->
+
+                    <dl class="active">
+                        <dt>Тип</dt>
+                        <dd>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="type-001" id="type-001"/>
+                                <label for="type-001">Видео/Аудиоматериалы</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="type-002" id="type-002"/>
+                                <label for="type-002">Текст</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="type-003" id="type-003"/>
+                                <label for="type-003">PDF</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="type-004" id="type-004"/>
+                                <label for="type-004">Архив ZIP</label>
+                            </p>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Вид</dt>
+                    </dl>
+
+                    <dl class="active">
+                        <dt>Формат</dt>
+                        <dd>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-001" id="format-001"/>
+                                <label for="format-001">Доклад</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-002" id="format-002"/>
+                                <label for="format-002">Лекция</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-003" id="format-003"/>
+                                <label for="format-003">Рекомендации</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-004" id="format-004"/>
+                                <label for="format-004">Нормативный документ</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-005" id="format-005"/>
+                                <label for="format-005">Статья</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-006" id="format-006"/>
+                                <label for="format-006">Интервью</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-007" id="format-007"/>
+                                <label for="format-007">Обзор</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-008" id="format-008"/>
+                                <label for="format-008">Учебное пособие</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-009" id="format-009"/>
+                                <label for="format-009">Исследование</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-010" id="format-010"/>
+                                <label for="format-010">Экспертное заключение</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-011" id="format-011"/>
+                                <label for="format-011">Сборник статей</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-012" id="format-012"/>
+                                <label for="format-012">Монография</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-013" id="format-013"/>
+                                <label for="format-013">Тезаурус</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-014" id="format-014"/>
+                                <label for="format-014">Методическая разработка</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-015" id="format-015"/>
+                                <label for="format-015">Образовательная программа</label>
+                            </p>
+                            <p class="nice-checkbox">
+                                <input type="checkbox" name="format-016" id="format-016"/>
+                                <label for="format-016">Релиз</label>
+                            </p>
+
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Тема</dt>
+                    </dl>
+
+                    <dl>
+                        <dt>Охват</dt>
+                    </dl>
+
+                    <dl>
+                        <dt>Автор</dt>
+                    </dl>
+
+                </form>
+                <!-- /filter -->
+
+            </aside>
+            <!-- /site__aside -->
+
+            <!-- site__wrap -->
+            <section class="site__wrap">
+
+                <!-- document -->
+                <div class="document">
+
+                    <!-- document__back -->
+                    <div class="document__back">
+                        <a href="#">Вернуться к результатам поиска</a>
+                    </div>
+                    <!-- /document__back -->
+
+                    <h1 class="site__page-title">Индивидуальная образовательная программа учащегося, и ее тьюторское</h1>
+
+                    <p class="document__info">2012   /   Информационный материал С.Д. Ильенков</p>
+
+                    <div class="document__content">
+                        <p>Глава из книги «Инновационный менеджмент».</p>
+                        <p>Материал взят из свободного доступа в сети Интернет.</p>
+                    </div>
+
+                    <!-- document__download -->
+                    <div class="document__download">
+
+                        <!-- document__icon -->
+                        <div class="document__icon">
+                            <img src="img/icon-document.png" alt="document"/>
+                        </div>
+                        <!-- /document__icon -->
+
+                        <a href="#">Скачать</a>
+                    </div>
+                    <!-- /document__download -->
+
+                </div>
+                <!-- /document -->
+
+                <!-- comments -->
+                <div class="comments">
+
+                    <h3>Комментарии</h3>
+
+                    <a href="#" class="btn comments__btn popup__open" data-popup="comment">Написать комментарий</a>
+
+                    <!-- comments__item -->
+                    <div class="comments__item">
+
+                        <!-- comments__info -->
+                        <div class="comments__info">
+                            <b>Степан Сергеевич Прокофьев</b>
+                            <time datetime="2016-05-18T15:23" class="comments__data">18 мая 2016 г. 15:23</time>
+                        </div>
+                        <!-- /comments__info -->
+
+                        <!-- comments__content -->
+                        <div class="comments__content">
+                            <p>14 августа 2015 г. отправлена заявка ТОГУ на экспертизу</p>
+                        </div>
+
+                        <a href="#" class="comments__answer popup__open" data-popup="comment">Ответить</a>
+
+                    </div>
+                    <!-- /comments__item -->
+
+                    <!-- comments__item -->
+                    <div class="comments__item">
+
+                        <!-- comments__info -->
+                        <div class="comments__info">
+                            <b>Павел Анатольевич Пегин</b>
+                            <time datetime="2016-05-18T15:23" class="comments__data">18 мая 2016 г. 15:23</time>
+                        </div>
+                        <!-- /comments__info -->
+
+                        <!-- comments__content -->
+                        <div class="comments__content">
+                            <p>14 августа 2015 г. отправлена заявка ТОГУ на экспертизу</p>
+                        </div>
+
+                        <!-- comments__item -->
+                        <div class="comments__item">
+
+                            <!-- comments__info -->
+                            <div class="comments__info">
+                                <b>Павел Анатольевич Пегин</b>
+                                <time datetime="2016-05-18T15:23" class="comments__data">18 мая 2016 г. 15:23</time>
+                            </div>
+                            <!-- /comments__info -->
+
+                            <!-- comments__content -->
+                            <div class="comments__content">
+                                <p>Организация обучения в очно-дистанционной форме по программе дополнительного профессионального</p>
+                            </div>
+
+                        </div>
+                        <!-- /comments__item -->
+
+                        <a href="#" class="comments__answer popup__open" data-popup="comment">Ответить</a>
+
+                    </div>
+                    <!-- /comments__item -->
+
+                </div>
+                <!-- /comments -->
+
+            </section>
+            <!-- /site__wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+        <!-- site__footer -->
+        <footer class="site__footer">
+
+            <!-- site__footer-layout -->
+            <div class="site__footer-layout">
+
+                <!-- footer-menu -->
+                <div class="footer-menu">
+                    <a href="#" class="footer-menu__item">ФИП</a>
+                    <a href="#" class="footer-menu__item">Мероприятия</a>
+                    <a href="#" class="footer-menu__item">Библиотека документов</a>
+                    <a href="#" class="footer-menu__item">Фото и видео</a>
+                    <a href="#" class="footer-menu__item">Контакты</a>
+                    <a href="#" class="footer-menu__item">Партнеры</a>
+                    <a href="#" class="footer-menu__item">Форумы</a>
+                </div>
+                <!-- /footer-menu -->
+
+            </div>
+            <!-- /site__footer-layout -->
+
+        </footer>
+        <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- popup -->
+    <div class="popup">
+
+        <!-- popup__wrap -->
+        <div class="popup__wrap">
+
+            <!-- popup__content -->
+            <div class="popup__content popup__comment">
+
+                <!-- popup__close -->
+                <div class="popup__close"></div>
+                <!-- /popup__close -->
+
+                <p class="popup__title">Написать комментарий</p>
+
+                <!-- profile -->
+                <form method="get" action="/" class="profile profile_popup">
+
+                    <textarea name="profile__comment"></textarea>
+
+                    <!-- profile__btn-wrap -->
+                    <div class="profile__btn-wrap profile__btn-wrap_1">
+                        <button type="submit" name="profile__orde" class="btn">Отправить</button>
+                    </div>
+                    <!-- /profile__btn-wrap -->
+
+                </form>
+                <!-- /profile -->
+
+            </div>
+            <!-- /popup__content -->
+
+        </div>
+        <!-- /popup__wrap -->
+
+    </div>
+    <!-- /popup -->
+
+    <script src="js/vendors/jquery-2.2.1.min.js"></script>
+    <script src="js/vendors/jquery.nicescroll.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

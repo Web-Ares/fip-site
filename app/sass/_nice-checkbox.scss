@@ -1,0 +1,72 @@
+.nice-checkbox {
+  margin-bottom: 10px;
+  user-select: none;
+
+  input[ type = checkbox ] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+
+    &:checked + label {
+
+      &:before {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    }
+
+    &:disabled + label {
+      cursor: default;
+      opacity: .5;
+    }
+
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 16px;
+    padding-left: 30px;
+    white-space: nowrap;
+    color: $nice-checkbox-color;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+    }
+
+    &:after {
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $nice-checkbox-after-color;
+      background-color: #ededed;
+    }
+
+    &:before {
+      top: 3px;
+      left: 6px;
+      border-right: 2px solid #639bd1;
+      border-bottom: 2px solid #639bd1;
+      width: 4px;
+      height: 7px;
+      z-index: 2;
+      content: '';
+      visibility: hidden;
+      opacity: 0;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transition: visibility .3s ease, opacity .3s ease;
+      -webkit-transition: visibility .3s ease, opacity .3s ease;
+    }
+
+  }
+
+}

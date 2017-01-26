@@ -1,0 +1,23 @@
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 830px;
+  height: inherit;
+  margin: 0 auto;
+  padding-bottom: 5px;
+
+  &__item{
+    color: #fff;
+    font-size: 14px;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+
+    &:hover{
+      color: #b7d7f6;
+    }
+
+  }
+
+}
+

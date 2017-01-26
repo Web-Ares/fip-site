@@ -1,0 +1,27 @@
+.awards {
+  position: relative;
+  margin-bottom: 64px;
+
+  &-button-prev,
+  &-button-next{
+    position: absolute;
+    bottom: 51px;
+    cursor: pointer;
+
+    svg{
+      width: 20px;
+      height: 46px;
+    }
+
+  }
+
+  &-button-prev{
+    left: -41px;
+  }
+
+  &-button-next{
+    right: -41px;
+  }
+
+}
+
